@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        .selector {
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            /*Multiplos valores*/
+            border: solid 5px navy;
+            /*shorthand property*/
+            font-family: Helvetica, sans-serif;
+            /*Funções*/
+            width: calc(100% - 100px);
+            background-color: rgb(255, 2, 155);
+        }
+        /*Pseudo classe*/
+        
+        .selector:hover {
+            background-color: #f4d;
+        }
+        /*Pseudo elemento*/
+        
+        .selector::first-letter {
+            color: black;
+            background-color: #ff2;
+            font-weight: bold;
+            font-size: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="selector">Conteúdo</div>
+</body>
+
+</html>
