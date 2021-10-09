@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Overflow</title>
     <style>
+        body {
+            width: 100%;
+            margin: 0;
+        }
+        
         div {
-            font-size: 40px;
-            height: 100px;
-            width: 260px;
+            font-size: 35px;
+            width: 100%;
             border: solid 3px;
+            padding: 5%;
+            box-sizing: border-box;
+            height: 50%;
+            /* overflow-y: initial; */
+            overflow-y: inherit;
+            /* scroll bloqueado no eixo y */
+            overflow-x: auto;
+            /* scroll automatico no eixo x */
+            overflow: auto;
+            /* scroll automatico nos eixos */
         }
     </style>
 </head>
+
 <body>
     <div>
-        TudoFuncionaMuitoBemEmCSS!!!
-        Texto muito grande para caber nessa div.
-        Já pensou qual será o comportamento padrão?
+        TudoFuncionaMuitoBemEmCSS!!! Texto muito grande para caber nessa div. Já pensou qual será o comportamento padrão?
     </div>
 </body>
+
 </html>
