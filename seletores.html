@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html>
+<!--  -->
 
 <head>
     <meta charset="UTF-8">
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
+        /* '*' seleciona toda a page e aplica a configuração*/
+        /* '.' seguido do nome da classe seleciona todos os elementos com o mesmo nome e 
+        aplica a configuração*/
+        /* '#' seguido do nome do ID seleciona o elemento com esse Id  aplica a configuração*/
+        /* '#aninhado > div' seleciona o 1º elemento após o ID se for uma div aplica a configuração*/
+        /* '#aninhado section' seleciona qualquer descendente desse ID com nome section*/
+        /* 'p + ul' seleciona a 1º ul que for antecedida por um p*/
+        /* 'p ~ ol' seleciona a qualquer elemento ol que for antecedida por um p*/
+        /* '[feira]' seleciona todos os elementos que tenham o atributo feira*/
+        /* '[feira=casa]' seleciona todos os elementos que tenham o atributo feira = "casa"*/
+        /* '[feira~=escritorio]' seleciona todos os elementos que tenham o atributo feira = "escritorio" 
+        e o que vier além desse valor*/
+        /* '[feira*=sa]' seleciona todos os elementos que tenham o atributo feira e no corpo 
+        do valor do seu atributo tenha 'sa'*/
+        /* span:nth-child(1) seleciona o 1º filho de qualquer elemento do type span*/
+        /* section > :nth-child(odd) seleciona todos os filho impares de section*/
+        /* section > :nth-child(even) seleciona todos os filho pares de section*/
+        /* section > :nth-child(even) label seleciona a label de todos os filho pares de section*/
+        /* section > :nth-child(even), ul seleciona todos os filho pares de section e também na tag ul*/
+        /* section > span:nth-of-type(2) seleciona o 2º elemento de section que seja um span*/
+        
         [feira*=asa] {
             color: #ff0;
             background-color: #f77;
