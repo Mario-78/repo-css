@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Unidades #02</title>
     <style>
-        /* ... */
+        html {
+            min-width: 10%;
+        }
+        
+        body {
+            background-color: rgb(216, 100, 84);
+        }
+        
+        .fora {
+            position: fixed;
+            background-color: orange;
+            height: 30%;
+            width: 40%;
+            padding: 50px;
+        }
+        
+        .dentro {
+            border: 2px rgb(27, 6, 104);
+            background-color: pink;
+            height: 100px;
+            width: 100%;
+            position: fixed;
+            /* cosidera o tamanho da view port */
+            position: absolute;
+            position: relative;
+            position: static;
+        }
     </style>
 </head>
+
 <body>
     <div class="fora">
-        <div class="dentro"></div>
+        <div class="dentro">a</div>
     </div>
 </body>
+
 </html>
